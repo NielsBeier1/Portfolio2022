@@ -38,7 +38,7 @@ previews.forEach((preview) => {
     });
 });
 
-modal.addEventListener('click', () => {
+modal.addEventListener('click', (e) => {
     if(e.target.classList.contains('modal')) {
         modal.classList.remove('open');
         original.classList.remove('open');
