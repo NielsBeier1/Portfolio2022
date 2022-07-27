@@ -33,7 +33,7 @@ previews.forEach((preview) => {
         original.classList.add("open");
         //Dynamic change of text and image
         const originalSrc = preview.getAttribute("data-original");
-        original.src = `./Full/${originalSrc}`;
+        original.src = `Full-size-img/${originalSrc}`;
         const altText = preview.alt;     
     });
 });
