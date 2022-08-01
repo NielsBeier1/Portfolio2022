@@ -33,12 +33,12 @@ previews.forEach((preview) => {
         original.classList.add("open");
         //Dynamic change of text and image
         const originalSrc = preview.getAttribute("data-original");
-        original.src = `./Full/${originalSrc}`;
+        original.src = `Full-size-img/${originalSrc}`;
         const altText = preview.alt;     
     });
 });
 
-modal.addEventListener('click', () => {
+modal.addEventListener('click', (e) => {
     if(e.target.classList.contains('modal')) {
         modal.classList.remove('open');
         original.classList.remove('open');
